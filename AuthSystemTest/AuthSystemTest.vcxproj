@@ -120,7 +120,7 @@
       <AdditionalIncludeDirectories>wininet.lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>
       </GenerateDebugInformation>
       <ProgramDatabaseFile />
