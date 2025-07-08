@@ -13,7 +13,7 @@ std::string AuthManager::authenticate(const std::wstring& userID) {
     HINTERNET hSession = InternetOpenA("AuthTeste", INTERNET_OPEN_TYPE_DIRECT, nullptr, nullptr, 0);
     if (!hSession) return "Erro InternetOpen";
 
-    HINTERNET hConnect = InternetConnectA(hSession, "141.11.128.63", INTERNET_DEFAULT_HTTP_PORT,
+    HINTERNET hConnect = InternetConnectA(hSession, "ip da vps aqui", INTERNET_DEFAULT_HTTP_PORT,
         nullptr, nullptr, INTERNET_SERVICE_HTTP, 0, 0);
     if (!hConnect) {
         InternetCloseHandle(hSession);
@@ -60,6 +60,6 @@ std::string AuthManager::authenticate(const std::wstring& userID) {
         return "Autenticado";
     }
     else {
-        return "Falha na autenticação: " + response;
+        return "Falha na autenticaÃ§Ã£o: " + response;
     }
 }
